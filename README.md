@@ -1,103 +1,67 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16892087.svg)](https://doi.org/10.5281/zenodo.16892087)
+# PlanWise: An Explainable AI for Multiclass Transportation Mode Prediction
 
+## 📖 Overview
+**PlanWise** is an explainable AI framework designed to recommend the most suitable transportation mode — **Cab, Family, or Bus** — based on contextual and personal preference features.  
 
+The system integrates multiple machine learning classifiers (**Logistic Regression, Decision Tree, Random Forest, SVM, XGBoost**) with **SHAP (SHapley Additive exPlanations)** for interpretability. This ensures that predictions are not only accurate but also transparent and trustworthy.  
 
-# PlanWise – Explainable AI for Multi-Class Transportation Mode Prediction  
+**Published on Zenodo:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16892087.svg)](https://doi.org/10.5281/zenodo.16892087)
 
-🚖👨‍👩‍👧‍👦🚌  
-
-This repository contains the implementation and documentation for **PlanWise**, an **Explainable AI (XAI) framework** that predicts transportation modes (Cab, Family, Bus) using machine learning classifiers. The framework integrates **SHAP** for transparent and interpretable predictions.  
 
 ---
 
-## 📌 Overview  
-Transportation mode choice impacts **time, cost, convenience, and sustainability**.  
-PlanWise helps users make **informed commute decisions** by:  
-- Predicting the **most suitable transportation mode**.  
-- Explaining **why** a particular mode was suggested.  
-- Comparing classifiers for performance and interpretability.  
+## ✨ Features
+- **Multiclass Classification** of transportation choices  
+- **Explainable AI** using SHAP values and feature importance  
+- **Evaluation Metrics:** Accuracy, F1 Score, ROC-AUC, Confusion Matrix  
+- **Statistical Validation:** Paired T-tests and McNemar’s Test  
+- **Visualization:** ROC curves, PR curves, PDP plots, SHAP plots  
 
 ---
 
-## 🚀 Features  
-- Multi-class classification (Cab, Family, Bus).  
-- Machine learning models: Logistic Regression, Decision Tree, SVM, Random Forest,and XGBoost.  
-- Model evaluation with accuracy, precision, recall, F1-score.  
-- Explainability using **SHAP (SHapley Additive exPlanations)**.  
-- Statistical validation with **McNemar’s Test** and **Paired T-Test**.  
+## 🗂️ Dataset
+The dataset includes:
+
+**Numerical Features:**  
+- Cost  
+- Time Reliability  
+- Safety Score  
+- Comfort Level  
+- Social Acceptability  
+- Legal Risk  
+- Travel Time  
+
+**Categorical Features:**  
+- Weather  
+- Day Type  
+
+**Target Variable:**  
+- Best Option (Cab / Family / Bus)  
 
 ---
 
-## 📊 Dataset  
-- Includes features such as **Cost,Time Reliability,
-Safety Score,Comfort Level,Social Acceptability,
-Legal Risk,Travel Time,Weather,Day Type,Best Option**.  
-- Each sample is labeled with one of the three transportation modes: **Cab,Bus,Family**  
-- Preprocessing includes encoding categorical variables and scaling numeric features.  
+## 📊 Results
+
+- Best Model: XGBoost achieved the highest ROC-AUC score and significantly outperformed Random Forest
+
+- Key Features: Cost, Day Type, and Travel Time were most influential in predictions
+
+- xplainability: SHAP plots provide per-instance transparency and feature interactions
 
 ---
 
-##  🔍 Tools used
+## 👩‍💻 Author
 
-- Python 
-- Pandas
-- numpy
-- scikit-learn
-- matplotlib
-- seaborn
-- shap
+- **Debaswini Moharana**
+- **Independent Researcher | Machine Learning Intern**
+- **Email: debaswinimoharana@gmail.com**
 
 ---
 
-## ⚙️ Methodology  
-1. **Data Preprocessing** → Encoding + Normalization.  
-2. **Model Training** → Logistic Regression, Decision Tree, SVM, Random Forest, XGBoost.  
-3. **Model Evaluation** → Accuracy, Precision, Recall, F1-score.  
-4. **Explainability** → SHAP global + local interpretations.  
-5. **Statistical Testing** → McNemar’s Test + Paired T-Test for validation.  
-
----
-
-## 📈 Results (Highlights)  
-- The model Decision tree and XGBoost  performed best.  
-- SHAP revealed  **cost, day type and Travel time** as the key features.  
-- Predictions are both **accurate** and **interpretable**.  
-
----
-
-## 🔮 Future Work  
-- Integration of Real-World Data: Future studies
-could leverage large-scale mobility datasets(e.g.,GPS
-traces,ride-hailing data, and public transport logs) to
-validate and strengthen the model’s generalizability. 
-- Inclusion of Additional Contextual Features: Ex-
-panding feature sets to include traffic congestion,fuel
-costs,dynamic pricing, and socio-demographic attributes
-may provide deeper insights into travel behavior.
--Advanced Modeling Approaches: Investigating deep
-learning models could capture temporal and spatial
-dependencies in travel choices more effectively while
-balancing explainability.
-- Multi-Object Decision Support: Incorporating sustain-
-ability measures such as carbon emissions into the
-decision-making framework could support greener trans-
-port planning.
-- User-Centric Interfaces: Future Applications could
-translate SHAP-based explanations into user-facing de-
-cision aids, allowing commuters to make informed travel
-choices aligned with their preferences and constraints.  
-
----
-
-## 👩‍💻Author
-**Debaswini Moharana**
-
----
-
-## 📖 Citation
+##  📖 Citation
 If you use this work, please cite:
 
 Moharana, D. (2025). *PlanWise: An Explainable AI for Multiclass Transportation Mode Prediction*. Zenodo. https://doi.org/10.5281/zenodo.16892087
 
----
 
+---
