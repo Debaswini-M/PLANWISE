@@ -94,3 +94,10 @@ choices aligned with their preferences and constraints.
 
 ---
 
+## 📖 Citation
+If you use this work, please cite:
+
+Moharana, D. (2025). *PlanWise: An Explainable AI for Multiclass Transportation Mode Prediction*. Zenodo. https://doi.org/10.5281/zenodo.16892087
+
+---
+
