@@ -1,3 +1,7 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16892087.svg)](https://doi.org/10.5281/zenodo.16892087)
+
+
+
 # PlanWise – Explainable AI for Multi-Class Transportation Mode Prediction  
 
 🚖👨‍👩‍👧‍👦🚌  
@@ -89,3 +93,4 @@ choices aligned with their preferences and constraints.
 **Debaswini Moharana**
 
 ---
+
